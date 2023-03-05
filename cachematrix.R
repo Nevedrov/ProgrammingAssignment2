@@ -30,7 +30,7 @@ cacheSolve <- function(x, ...) {
     }
     else{
         print("not cached")
-        inv_matrix<-solve(x$get())
+        inv_matrix<-solve(x$get(), ...)
         x$set_cache(inv_matrix)
     }
     inv_matrix 
